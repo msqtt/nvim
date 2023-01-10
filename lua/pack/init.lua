@@ -23,6 +23,7 @@ packer.startup(function(use)
 			require("nvim-treesitter.install").update({ with_sync = true })
 		end,
 		config = require("config.plug.treesitter").after,
+		event = "BufRead",
 	})
 
 	require("config.plug.coc").before()
@@ -42,11 +43,13 @@ packer.startup(function(use)
 		"kylechui/nvim-surround",
 		tag = "main",
 		config = require("config.plug.surround").after,
+		event = "CursorHold",
 	})
 
 	use({
 		"numToStr/Comment.nvim",
 		config = require("config.plug.comment").after,
+		event = "CursorHold",
 	})
 
 	require("config.plug.carbon").before()
@@ -60,6 +63,7 @@ packer.startup(function(use)
 		"phaazon/hop.nvim",
 		branch = "v2", -- optional but strongly recommended
 		config = require("config.plug.hop").after,
+		event = "CursorHold",
 	})
 end)
 
