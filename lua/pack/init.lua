@@ -65,6 +65,9 @@ packer.startup(function(use)
 		config = require("config.plug.hop").after,
 		event = "CursorHold",
 	})
+
+	require("keymap.packkeys").suda()
+	use({ "lambdalisue/suda.vim" })
 end)
 
 if packer_bootstrap then

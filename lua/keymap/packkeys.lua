@@ -14,11 +14,11 @@ function packkeys.cockey()
 	local opts = { silent = true, noremap = true, expr = true, replace_keycodes = false }
 	keyset(
 		"i",
-		"<C-j>",
+		"<c-n>",
 		'coc#pum#visible() ? coc#pum#next(1) : v:lua.check_back_space() ? "<TAB>" : coc#refresh()',
 		opts
 	)
-	keyset("i", "<S-TAB>", [[coc#pum#visible() ? coc#pum#prev(1) : "\<C-h>"]], opts)
+	keyset("i", "<c-p>", [[coc#pum#visible() ? coc#pum#prev(1) : "\<C-h>"]], opts)
 
 	-- Make <CR> to accept selected completion item or notify coc.nvim to format
 	-- <C-g>u breaks current undo, please make your own choice
@@ -27,7 +27,7 @@ function packkeys.cockey()
 	-- Use <c-j> to trigger snippets
 	keyset("i", "<c-j>", "<Plug>(coc-snippets-expand-jump)")
 	-- Use <c-space> to trigger completion
-	keyset("i", "<c-space>", "coc#refresh()", { silent = true, expr = true })
+	keyset("i", "<a-space>", "coc#refresh()", { silent = true, expr = true })
 
 	-- Use `[g` and `]g` to navigate diagnostics
 	-- Use `:CocDiagnostics` to get all diagnostics of current buffer in location list
@@ -134,6 +134,9 @@ function packkeys.cockey()
 	-- NOTE: Please see `:h coc-status` for integrations with external plugins that
 	-- provide custom statusline: lightline.vim, vim-airline
 	vim.opt.statusline:prepend("%{coc#status()}%{get(b:,'coc_current_function','')}")
+
+	-- coc-translate
+	keyset("v", "<leader>t", "<Plug>(coc-translate-selected)", { silent = true, noremap = true })
 end
 
 --[[
@@ -166,6 +169,13 @@ end
 -- ]]
 function packkeys.hop()
 	keyset("n", "<leader>F", ":HopPattern<CR>", { noremap = true })
+end
+
+--[[
+-- suda.vim
+-- ]]
+function packkeys.suda()
+	vim.api.nvim_create_user_command("Suda", "SudaWrite", {})
 end
 
 return packkeys
