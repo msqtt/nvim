@@ -12,8 +12,9 @@ local function mapLayout(mode, pre, now)
 end
 
 local modnx = mod():n():x()
+local modnxo = mod():n():x():o()
 
 mapLayout(modnx, "n", "j")
 mapLayout(modnx, "e", "k")
-mapLayout(modnx, "m", "h")
-mapLayout(modnx:o(), "i", "l")
+mapLayout(modnxo, "y", "h")
+mapLayout(modnxo, "o", "l")

@@ -18,7 +18,7 @@ function packkeys.cockey()
 		'coc#pum#visible() ? coc#pum#next(1) : v:lua.check_back_space() ? "<TAB>" : coc#refresh()',
 		opts
 	)
-	keyset("i", "<c-p>", [[coc#pum#visible() ? coc#pum#prev(1) : "\<C-h>"]], opts)
+	keyset("i", "<c-e>", [[coc#pum#visible() ? coc#pum#prev(1) : "\<C-h>"]], opts)
 
 	-- Make <CR> to accept selected completion item or notify coc.nvim to format
 	-- <C-g>u breaks current undo, please make your own choice
@@ -134,9 +134,6 @@ function packkeys.cockey()
 	-- NOTE: Please see `:h coc-status` for integrations with external plugins that
 	-- provide custom statusline: lightline.vim, vim-airline
 	vim.opt.statusline:prepend("%{coc#status()}%{get(b:,'coc_current_function','')}")
-
-	-- coc-translate
-	keyset("v", "<leader>t", "<Plug>(coc-translate-selected)", { silent = true, noremap = true })
 end
 
 --[[

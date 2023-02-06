@@ -6,16 +6,18 @@ local ot = opt():Nore()
 vim.g.mapleader = "z"
 vim.g.localmapleader = "z"
 
+-- look up all map of one key
+map("c", "cm", "verbose map", ot)
+
 map("n", "qq", ":q!<CR>", ot)
 map("n", "Q", ":qa!<CR>", ot)
 
 map("n", "<space>", "viw", ot)
 map("n", "vv", "0v$h", ot)
-map("n", "M", "0", ot)
-map("n", "I", "$", ot)
+map("n", "Y", "0", ot)
+map("n", "O", "$", ot)
 map("n", "N", "5j", ot)
 map("n", "E", "5k", ot)
-
 map("v", "<", "<gv", ot)
 map("v", ">", ">gv", ot)
 map("v", "N", ":move '>+1<CR>gv-gv", ot)
@@ -30,17 +32,17 @@ map("n", "sh", ":sp<CR>", ot)
 map("n", "sc", "<C-w>c", ot)
 map("n", "so", "<C-w>o", ot)
 
-map("n", "<A-m>", "<C-w>h", ot)
+map("n", "<A-y>", "<C-w>h", ot)
 map("n", "<A-n>", "<C-w>j", ot)
 map("n", "<A-e>", "<C-w>k", ot)
-map("n", "<A-i>", "<C-w>l", ot)
-map("t", "<A-m>", [[ <C-\><C-N><C-w>h ]], ot)
+map("n", "<A-o>", "<C-w>l", ot)
+map("t", "<A-y>", [[ <C-\><C-N><C-w>h ]], ot)
 map("t", "<A-n>", [[ <C-\><C-N><C-w>j ]], ot)
 map("t", "<A-e>", [[ <C-\><C-N><C-w>k ]], ot)
-map("t", "<A-i>", [[ <C-\><C-N><C-w>l ]], ot)
+map("t", "<A-o>", [[ <C-\><C-N><C-w>l ]], ot)
 
-map("n", "<A-S-m>", ":vertical resize -2<CR>", ot)
-map("n", "<A-S-i>", ":vertical resize +2<CR>", ot)
+map("n", "<A-S-y>", ":vertical resize -2<CR>", ot)
+map("n", "<A-S-o>", ":vertical resize +2<CR>", ot)
 map("n", "<A-S-e>", ":resize -2<CR>", ot)
 map("n", "<A-S-n>", ":resize +2<CR>", ot)
 map("n", "s=", "<C-w>=", ot)
