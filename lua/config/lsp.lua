@@ -11,3 +11,7 @@ api.nvim_create_autocmd("FileType", { pattern = "go", command = "nmap gtx :CocCo
 
 -- markdown
 api.nvim_create_autocmd("FileType", { pattern = "markdown", command = "inoremap 3` ``````<esc>hhi" })
+api.nvim_create_autocmd(
+	"FileType",
+	{ pattern = "markdown", command = "nnoremap <F12> :CocCommand markdown-preview-enhanced.openPreview<cr>" }
+)

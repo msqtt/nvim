@@ -55,9 +55,6 @@ packer.startup(function(use)
 	require("config.plug.carbon").before()
 	use({ "SidOfc/carbon.nvim", config = require("config.plug.carbon").after })
 
-	require("config.plug.glow").before()
-	use({ "ellisonleao/glow.nvim" })
-
 	require("config.plug.hop").before()
 	use({
 		"phaazon/hop.nvim",

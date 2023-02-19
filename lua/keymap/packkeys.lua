@@ -134,6 +134,8 @@ function packkeys.cockey()
 	-- NOTE: Please see `:h coc-status` for integrations with external plugins that
 	-- provide custom statusline: lightline.vim, vim-airline
 	vim.opt.statusline:prepend("%{coc#status()}%{get(b:,'coc_current_function','')}")
+
+	-- coc-markdown-preview
 end
 
 --[[
@@ -155,17 +157,10 @@ function packkeys.carbon()
 end
 
 --[[
--- glow keybindings
---]]
-function packkeys.glow()
-	vim.api.nvim_create_autocmd("FileType", { pattern = "markdown", command = "nnoremap <F12> :Glow<cr>" })
-end
-
---[[
 -- hop keybindings
 -- ]]
 function packkeys.hop()
-	keyset("n", "<leader>F", ":HopPattern<CR>", { noremap = true })
+	keyset("n", "<leader>f", ":HopPattern<CR>", { noremap = true })
 end
 
 --[[
