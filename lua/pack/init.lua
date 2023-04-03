@@ -43,7 +43,7 @@ packer.startup(function(use)
 		"kylechui/nvim-surround",
 		tag = "main",
 		config = require("config.plug.surround").after,
-		event = "CursorHold",
+		-- event = "CursorHold",
 	})
 
 	use({
@@ -65,6 +65,9 @@ packer.startup(function(use)
 
 	require("keymap.packkeys").suda()
 	use({ "lambdalisue/suda.vim" })
+
+	require("config.plug.venn").before()
+	use("jbyuki/venn.nvim")
 end)
 
 if packer_bootstrap then

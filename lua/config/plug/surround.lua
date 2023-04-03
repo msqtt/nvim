@@ -12,6 +12,9 @@ function S.after()
 				normal_cur = "hss",
 				normal_line = "hS",
 				normal_cur_line = "hSS",
+				visual_line = "gS",
+				delete = "ds",
+				change = "cs",
 			},
 		})
 	end

@@ -1,9 +1,10 @@
 {
-  "coc.preferences.formatOnSaveFiletypes": [
+  "coc.preferences.formatOnSave": [
     "css",
     "markdown",
     "lua",
     "go",
+    "rust",
     "json",
     "vue",
     "javascript",
@@ -22,5 +23,5 @@
   },
   "clangd.path": "~/.config/coc/extensions/coc-clangd-data/install/15.0.6/clangd_15.0.6/bin/clangd",
   "snippets.ultisnips.pythonPrompt": false,
-  "markdown-preview-enhanced.previewTheme": "github-dark.css"
+  "markdown-preview-enhanced.previewTheme": "github-light.css"
 }
