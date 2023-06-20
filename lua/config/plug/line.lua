@@ -19,7 +19,7 @@ function GetFt()
 end
 
 function L.before()
-	vim.g.powerline_symbols = { light_right = "┃", dark_right = "┃", light_left = "┃", dark_left = "┃" }
+	vim.g.powerline_symbols = { light_right = "▷ ", dark_right = "▶ ", light_left = "◁ ", dark_left = "◀ " }
 	vim.g.line_powerline_enable = 1
 	vim.g.line_nerdfont_enable = 1
 	vim.g.line_unnamed_filename = "~"

@@ -9,8 +9,8 @@ vim.g.localmapleader = "z"
 -- look up all map of one key
 map("c", "cm", "verbose map", ot)
 
-map("n", "qq", ":q!<CR>", ot)
-map("n", "Q", ":qa!<CR>", ot)
+map("n", "qq", ":bdelete<CR>", ot)
+map("n", "QA", ":qa!<CR>", ot)
 
 map("n", "<space>", "viw", ot)
 map("n", "vv", "0v$h", ot)
@@ -25,6 +25,7 @@ map("v", "E", ":move '<-2<CR>gv-gv", ot)
 
 map("n", "<tab>", ":bn<CR>", opt():Nore():Silent())
 map("n", "<S-tab>", ":bp<CR>", opt():Nore():Silent())
+map("n", "<C-l>", ":set cursorline! cursorcolumn!<CR>", opt():Nore():Silent())
 
 map("n", "s", "", ot)
 map("n", "sv", ":vsp<CR>", ot)

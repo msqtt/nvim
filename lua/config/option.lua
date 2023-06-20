@@ -38,7 +38,7 @@ opt.showcmd = false
 opt.cmdheight = 1
 opt.laststatus = 3
 opt.list = true
-opt.listchars = "tab:»·,nbsp:+,trail:·,extends:→,precedes:←"
+opt.listchars = "tab:··,nbsp:+,trail:·,extends:→,precedes:←"
 opt.pumblend = 10
 opt.winblend = 10
 opt.undofile = true
@@ -67,3 +67,7 @@ opt.hlsearch = true
 
 opt.textwidth = 100
 opt.colorcolumn = "100"
+
+if vim.fn.has("termguicolors") then
+	vim.opt.termguicolors = true
+end
