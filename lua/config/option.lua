@@ -67,6 +67,7 @@ opt.hlsearch = true
 
 opt.textwidth = 100
 opt.colorcolumn = "100"
+opt.fdm = "manual"
 
 if vim.fn.has("termguicolors") then
 	vim.opt.termguicolors = true

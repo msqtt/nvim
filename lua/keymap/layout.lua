@@ -17,4 +17,5 @@ local modnxo = mod():n():x():o()
 mapLayout(modnx, "n", "j")
 mapLayout(modnx, "e", "k")
 mapLayout(modnxo, "y", "h")
-mapLayout(modnxo, "o", "l")
+-- cause a bug
+mapLayout(modnx, "o", "l")

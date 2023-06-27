@@ -3,8 +3,8 @@ local map, opt = u.map, u.opt
 
 local ot = opt():Nore()
 
-vim.g.mapleader = "z"
-vim.g.localmapleader = "z"
+vim.g.mapleader = "'"
+vim.g.localmapleader = "'"
 
 -- look up all map of one key
 map("c", "cm", "verbose map", ot)
