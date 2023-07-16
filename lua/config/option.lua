@@ -7,6 +7,8 @@ opt.backupdir = cache_dir .. "backup/"
 opt.viewdir = cache_dir .. "view/"
 opt.spellfile = cache_dir .. "spell/en.uft-8.add"
 
+-- opt.autochdir = true
+
 opt.termguicolors = true
 opt.magic = true
 opt.hidden = true

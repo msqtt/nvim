@@ -5,7 +5,7 @@ function B.after()
 	if boo then
 		boo.use({
 			italic = true, -- toggle italics
-			theme = "boo",
+			theme = "radioactive_waste",
 		})
 	end
 end

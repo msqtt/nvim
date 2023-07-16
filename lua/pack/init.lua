@@ -1,4 +1,5 @@
 local packer_bootstrap = false
+
 local install_path = vim.fn.stdpath("data") .. "/site/pack/packer/start/packer.nvim"
 local packer_repo = "https://github.com/wbthomason/packer.nvim"
 
@@ -69,6 +70,16 @@ packer.startup(function(use)
 
 	require("config.plug.venn").before()
 	use("jbyuki/venn.nvim")
+
+	use({
+		"stevearc/aerial.nvim",
+		config = require("config.plug.aerial").after,
+	})
+
+	use({
+		"lervag/vimtex",
+		config = require("config.plug.vimtex").after,
+	})
 end)
 
 if packer_bootstrap then

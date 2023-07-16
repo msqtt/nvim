@@ -3,25 +3,19 @@
     "css",
     "markdown",
     "lua",
-    "go",
     "rust",
     "json",
+    "go",
     "vue",
     "javascript",
     "javascriptreact",
     "typescript",
     "typescriptreact"
   ],
-  "colors.enable": true,
-  "languageserver": {
-    "go": {
-      "command": "gopls",
-      "rootPatterns": ["go.mod"],
-      "trace.server": "verbose",
-      "filetypes": ["go"]
-    }
+  "go.goplsOptions": {
+    "completeUnimported": true
   },
-  "clangd.path": "~/.config/coc/extensions/coc-clangd-data/install/15.0.6/clangd_15.0.6/bin/clangd",
+  "colors.enable": true,
   "snippets.ultisnips.pythonPrompt": false,
   "markdown-preview-enhanced.previewTheme": "github-light.css"
 }
