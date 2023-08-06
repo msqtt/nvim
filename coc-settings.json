@@ -1,6 +1,5 @@
 {
   "coc.preferences.formatOnSave": [
-    "css",
     "markdown",
     "lua",
     "rust",

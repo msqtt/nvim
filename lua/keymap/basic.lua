@@ -6,9 +6,6 @@ local ot = opt():Nore()
 vim.g.mapleader = "'"
 vim.g.localmapleader = "'"
 
--- look up all map of one key
-map("c", "cm", "verbose map", ot)
-
 map("n", "qq", ":bdelete<CR>", ot)
 map("n", "QA", ":qa!<CR>", ot)
 

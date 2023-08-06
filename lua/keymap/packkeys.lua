@@ -143,10 +143,11 @@ end
 --]]
 function packkeys.telescope()
 	local builtin = require("pack.utils").getPlug("telescope.builtin")
-	keyset("n", "<leader>ff", builtin.find_files, {})
-	keyset("n", "<leader>fg", builtin.live_grep, {})
-	keyset("n", "<leader>fb", builtin.buffers, {})
-	keyset("n", "<leader>fh", builtin.help_tags, {})
+	keyset("n", "<leader><leader>f", builtin.find_files, {})
+	keyset("n", "<leader><leader>g", builtin.live_grep, {})
+	keyset("n", "<leader><leader>t", builtin.buffers, {})
+	keyset("n", "<leader><leader>h", builtin.help_tags, {})
+	keyset("n", "<leader><leader>l", builtin.treesitter, {})
 end
 
 --[[
@@ -160,7 +161,7 @@ end
 -- hop keybindings
 -- ]]
 function packkeys.hop()
-	keyset("n", "<leader>f", ":HopPattern<CR>", { noremap = true })
+	keyset("n", "<leader>z", ":HopPattern<CR>", { noremap = true })
 end
 
 --[[
