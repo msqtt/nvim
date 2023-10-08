@@ -1,3 +1,7 @@
+## new configs are here 
+
+this repo won't be updated, and i move my stuffs to [here.](https://github.com/msqtt/nixos-config/tree/master/home/alice/nvim/conf)
+
 ## nvim.lua
 
 Emm, here are my nvim stuffs, i'm trying to make it eazy as much as possible. :relaxed:
